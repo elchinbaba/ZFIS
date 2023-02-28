@@ -1,6 +1,8 @@
-namespace ZFIS
+using ZFIS;
+
+namespace DEandZFIS
 {
-	class _Main
+	public class _Main
 	{
 		public static void Main()
 		{
@@ -64,7 +66,7 @@ namespace ZFIS
 			//
 			while (NF.MSE(inputs, outputs) > 0.001)
 			{
-				NF.DoTrain(inputs, outputs, lranges, rranges, 2000, 1000, 0); // Save solution after each 1000 iterations
+				NF.DoTrain(inputs, outputs, lranges, rranges, 2000, 0);
 			}
 			//
 			//LoadTrainedSystem(out NF);
